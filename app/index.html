@@ -5,8 +5,10 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
 </head>
-<body class="container">
-  <h1>Vote for a friend!</h1>
+<body id="colormeplease" class="container">
+  <div class="page-header">
+  <h1>Vote for a friend! <small>Cast your vote on the blockchain</small></h1>
+</div>
   <div class="well">
     <div id="address"></div>
     <div class="table-responsive">
@@ -37,6 +39,7 @@
     <input type="text" id="candidate" />
     <a href="#" onclick="voteForCandidate()" class="btn btn-primary">Vote</a>
   </div>
+  <img id="friendimage" src="app/stylesheets/imagesfolder/friendship-day (1).jpg" class="img-fluid img-rounded" alt="friends" />
 </body>
 <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>

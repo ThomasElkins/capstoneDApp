@@ -11,7 +11,7 @@ let candidates = {"Thomas": "candidate-1", "Matt": "candidate-2", "McKenzi": "ca
 window.voteForCandidate = function(candidate) {
   let candidateName = $("#candidate").val();
   try {
-    $("#msg").html("Vote has been submitted. The vote count will increment as soon as the vote is recorded on the blockchain. Please wait.")
+    $("#msg").html("Vote has been submitted. The vote count will increment as soon as the vote is recorded on the blockchain. Please wait...")
     $("#candidate").val("");
 
     Voting.deployed().then(function(contractInstance) {
